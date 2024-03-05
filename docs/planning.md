@@ -34,3 +34,5 @@
 <b>display_remaining_lives</b>: Prints the remaining lives of both players.
 
 <b>game_over</b>: Displays a game-over message and exits the program.
+
+The Game class incorporates the MathQuestionGenerator module for generating math questions during each player's turn.
