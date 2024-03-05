@@ -2,6 +2,7 @@
 require_relative './player.rb'
 
 module MathQuestionGenerator
+  # Generates a new math question for the player and handles the response
   def new_question(player)
     number1 = rand(1..20)
     number2 = rand(1..20)
@@ -30,6 +31,7 @@ class Game
     puts "New players are #{@player1.name} and #{@player2.name}!"
   end
 
+  # Initiates the game 
   def start_game()
     puts "---- Let the games begin -----!"
     while player1.remaining_lives != 0 || player2.remaining_lives != 0 do
@@ -38,6 +40,7 @@ class Game
     end
   end
 
+  # Conducts a round where the specified player answers a math question.
   def play_round(player)
     new_question(player)
     if player1.remaining_lives > 0 && player2.remaining_lives > 0
@@ -52,12 +55,14 @@ class Game
     end
   end
   
+  # Displays a game-over message and exits the program
   def game_over()
     puts "----- GAME OVER -----"
     puts "Good bye!"
     exit
   end
 
+  # Prints the remaining lives of both players
   def display_remaining_lives
     puts "P1: #{player1.remaining_lives}/3 vs P2: #{player2.remaining_lives}/3"
   end

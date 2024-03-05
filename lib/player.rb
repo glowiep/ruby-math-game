@@ -4,6 +4,7 @@ module Lives
     @lives -= 1
   end
 
+  # gets the current number of lives for the player
   def remaining_lives
     @lives
   end
