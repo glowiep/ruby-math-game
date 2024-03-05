@@ -4,9 +4,9 @@ This is a 2-Player math game where players take turns to answer simple math addi
 ## Game Rules 🏆
 - Both players start with 3 lives. 
 - A new math question is generated for each turn by picking two numbers between 1 and 20. 
-- The player whose turn it is is prompted the question and must answer correctly or lose a life.
-- The game doesn’t end until one of the players loses all their lives.
-- At this point, the game will announce the winner and the winner's score.
+- The players take turns answering questions, losing 'lives' for incorrect answers.
+- The game continues until one player runs out of lives.
+- When the game is over, the winner's score will be announced.
 
 ## Getting Started ✨
 1. Clone this directory.
