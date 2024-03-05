@@ -2,8 +2,12 @@
 module Lives
   def lose_life
     @lives -= 1
-    puts "Lost a life! Lives remaininig: #{@lives}/3"
   end
+
+  def remaining_lives
+    @lives
+  end
+
 end
 
 
@@ -15,8 +19,6 @@ class Player
   def initialize(name)
     @name = name
     @lives = 3
-    puts "Player: #{@name} initialized"
-    puts "Player lives remaining: #{@lives}/3"
   end
   
 end
